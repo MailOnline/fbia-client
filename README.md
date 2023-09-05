@@ -2,6 +2,25 @@
 
 It's an FBIA client in clojure
 
+
+## Maintenance message
+
+We now maintain only FB graph API versions as they go deprecated
+
+Building and deploying this is manual
+
+Our Nexus has been introduced in the project.clj file so if you type
+
+```lein deploy``` 
+
+it will deploy there
+
+it will ask for passw, introduce the admin user and password you use to browse our nexus jar repo
+
+you have to configure GPG, maybe the latest lein version can use ssh instead
+
+atm it only signs the pom files and its signature with MD5 and SHA1, so the jar file and it's signature have to be checksummed manually in order --- WIP
+
 ## Obtention
 
 ```
